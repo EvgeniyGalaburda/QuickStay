@@ -1,0 +1,231 @@
+.menu{
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #328FDF;
+    bottom: -20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    font-size: 20px;
+    font-weight: 100;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.page{
+    width: 1024px;
+}
+
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title{
+    font-size: 32px;
+}
+
+.center{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.imgHolder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgHolder{
+    height: 60vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.location{
+    font-size: 16px;
+    color: #6b6b6b;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.location svg{
+    font-size: 20px;
+}
+
+.sideFeatures{
+    background: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sideFeatures h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ececec;
+    padding: 15px;
+}
+
+.priceValue{
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.oldPriceValue{
+    color: #c1121f;
+    text-decoration: line-through;
+    align-self: flex-end;
+}
+
+.price button{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #328FDF;
+    outline: none;
+    background: #328FDF;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.price button:hover{
+    background: transparent;
+    color: #328FDF;
+}
+
+.rowPrice{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.date{
+    color: #878787;
+}
+
+.feature{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.features{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.true{
+    color: green;
+}
+
+.false{
+    color: #c1121f;
+}
+
+.desc{
+    box-sizing: border-box;
+    width: calc(100% / 4 * 3 - 20px);
+    margin: 30px 0;
+}
+
+.desc h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.desc p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+
+
+.activeDate{
+    background: #328FDF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.disabledDate {
+    background: #df4545;
+    color: #fff;
+    pointer-events: none;
+    cursor: not-allowed;
+    border-radius: 5px;
+}
+
+.calendar button:not(.book)
+{
+    padding: 10px;
+    border: 1px solid #d8d8d8;
+    outline: none;
+    cursor: pointer;
+}
+
+.calendar > p{
+    font-size: 32px;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background: #328FDF;
+    color: #fff;
+    font-weight: 700;
+}
+
+.calendar{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.book{
+    border: 2px solid #328FDF;
+    padding: 15px 20px;
+    background: #fff;
+    cursor: pointer;
+    color: #328FDF;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+.book:hover{
+    background: #328FDF;
+    color: #fff;
+}
+
